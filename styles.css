@@ -1,0 +1,53 @@
+html,body { margin: 0; padding: 0; }
+body {
+	background-color: #0169b1;
+	font-family: 'Helvetica','Arial',sans-serif;
+	font-size: 100%;
+	line-height: 1em;
+}
+#UserChoice, #ComputerChoice, #Winner, #Reason { opacity: 0; }
+
+#Options { margin: 0 auto; padding: 0; text-align: center; }
+#Options li {
+	background-color: #348ebb;
+	border: solid 5px #fff;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	height: 100px;
+	line-height: 100px;
+	list-style-type: none;
+	margin: 0 10px;
+	text-align: center;
+	width: 100px;
+}
+
+.Results {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.25);
+	text-align: center;
+	margin: 2%;
+	display: none;
+}
+#UserChoice, #ComputerChoice {
+	background: center center no-repeat #348ebb;
+	background-size: 50% auto;
+	border: solid 5px #0169b1;
+	border-radius: 200px;
+	color: #000;
+	display: inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	height: 200px;
+	line-height: 200px;
+	margin: 50px;
+	width: 200px;
+}
+#Game .Results > .Rock { background-image: url('images/rock.png'); }
+#Game .Results > .Paper { background-image: url('images/paper.png'); }
+#Game .Results > .Scissors { background-image: url('images/scissors.png'); }
+#Game .Results > .Lizard { background-image: url('images/lizard.png'); }
+#Game .Results > .Spock { background-image: url('images/spock.png'); }
